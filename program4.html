@@ -4,15 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-</head>
-<body>
   <style>
     @media print{
       input{
-        
+        display: none;
+      }
+      table{
+        width: 80%;
       }
     }
   </style>
+</head>
+<body>
+  <script>
+    var course=prompt("enter course");
+    var name,age;
+    switch(course){
+      case 'mern':
+        alert("welcome :"+course);
+        studentinfo();
+
+        break;
+        case'java':
+        alert("welcome :"+course);
+        studentinfo();
+        break;
+        case 'react':
+          alert("welcome :"+course);
+          break;
+          default:
+            alert("not valid");
+    }
+
+
+        function studentcondition() {
+            if (course == "java" && age <= 20) {
+                alert("course is not valid")
+            }
+        }
+
+var cname,clocation,deg;
+// const collegeinfo = ()=>{
+//     cname = prompt("enter cname");
+//     clocation = prompt("enter clocation");
+//     deg = prompt("enter deg");
+// }
+
+function collegeinfo()
+{
+    cname = prompt("enter cname");
+    clocation = prompt("enter clocation");
+    deg = prompt("enter deg");
+     printdetails();
+}
+
+
+
+function printdetails()
+{
+    document.write(`
+        <table border="1">
+    <tr>
+        <th>Course : </th>
+        <td>${course}</td>
+    </tr>
+    <tr>
+        <th>Name : </th>
+        <td>${name}</td>
+    </tr>
+    <tr>
+        <th>Age : </th>
+        <td>${age}</td>
+    </tr>
+    <tr>
+        <th>Cname : </th>
+        <td>${cname}</td>
+    </tr>
+    <tr>
+        <th>Clocation : </th>
+        <td>${clocation}</td>
+    </tr>
+    <tr>
+        <th>Cdeg : </th>
+        <td>${deg}</td>
+    </tr>
+    <tr>
+
+        <td colspan="2"> <input type="button" value="print info" onclick="myprint()"></td>
+    </tr>
+</table>
+    `)
+
+}
+
+function myprint()
+{
+    window.print();
+}
+
+  </script>
 
 </body>
 </html>
