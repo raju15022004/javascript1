@@ -9,9 +9,14 @@
 // console.log(s.slice(5));
 // console.log(s.slice(2,6));
 
-let s="raju is a teacher at physics wallah";
-console.log(s);
-let arr=s.split(' ');
-for(const ele of arr){
-  console.log(ele);
-}
+// let s="raju is a teacher at physics wallah";
+// console.log(s);
+// let arr=s.split(' ');
+// for(const ele of arr){
+//   console.log(ele);
+// }
+
+
+let age=30;
+let exp=10;
+console.log("My age is "+age+" and my experience is "+exp );
