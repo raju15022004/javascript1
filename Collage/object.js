@@ -7,7 +7,7 @@ let x= {
 
 let car={
   name:"Honda city",
-  mielage:25.8,
+  mielage:25,
 
 };
 
