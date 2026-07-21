@@ -2,4 +2,9 @@ function product(a,b,c){
   return a*b*c;
 }
 
-console.log(product(5,1,6));
+function fun(x,y){
+console.log(x-y);
+
+}
+
+fun(product(3,8,9),7);
