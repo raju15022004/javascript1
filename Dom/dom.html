@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="title" >welcome</h1>
+
+  <p class="text">first</p>
+  <p class="text">second</p>
+  <p class="text">third</p>
+
+  <div>One</div>
+  <div>Two</div>
+  <div>Three</div>
+
+  <h2>Heading</h2>
+  <h2>Another Heading</h2>
+
+  <li class="item">Apple</li>
+  <li class="item">Banana</li>
+  <li class="item">Orange</li>
+
+  <script>
+    let heading =document.getElementById("title");
+    console.log(heading);
+
+    let paragraphs=document.getElementsByClassName("text");
+    console.log(paragraphs);
+    paragraphs[0].style.color="red";
+    paragraphs[1].style.color="blue";
+
+    let divs=document.getElementsByTagName("div");
+    divs[2].textContent="Changed";
+
+
+    let headings=document.querySelector("h2");
+
+    let items=document.querySelectorAll(".item");
+
+  </script>
+</body>
+</html>
